@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace HackMD.API.Model;
+namespace HackMD.API.Model.Response;
 public class User
 {
     [JsonPropertyName("name")]

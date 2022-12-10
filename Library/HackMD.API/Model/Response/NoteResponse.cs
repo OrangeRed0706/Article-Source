@@ -1,8 +1,9 @@
 using System.Text.Json.Serialization;
+using HackMarkdown.API.Model.Response;
 using HackMD.API.Enums;
 
-namespace HackMD.API.Model;
-public class NotesResponse
+namespace HackMD.API.Model.Response;
+public class NoteResponse
 {
     [JsonPropertyName("id")]
     public string? Id { get; set; }
@@ -18,7 +19,8 @@ public class NotesResponse
     public string? PublishLink { get; set; }
     [JsonPropertyName("shortId")]
     public string? ShortId { get; set; }
-    [JsonPropertyName("lastChangedAt")]
+    [JsonPropertyName("content")]
+    public string? Content { get; set; }
     public long LastChangedAt { get; set; }
     [JsonPropertyName("lastChangeUser")]
     public User? LastChangeUser { get; set; }

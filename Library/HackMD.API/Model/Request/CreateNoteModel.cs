@@ -1,12 +1,12 @@
 using HackMD.API.Enums;
 
-namespace HackMD.API.Model;
+namespace HackMD.API.Model.Request;
 
-public class UpdateNoteModel
+public class CreateNoteModel
 {
+    public string? Title { get; set; }
     public string? Content { get; set; }
     public ReadWritePermission ReadPermission { get; set; }
     public ReadWritePermission WritePermission { get; set; }
     public CommentPermission CommentPermission { get; set; }
-    public string? Permalink { get; set; }
 }

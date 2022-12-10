@@ -1,18 +1,18 @@
-using HackMD.API.Options;
+using HackMarkdown.API.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
-namespace HackMD.API;
+namespace HackMarkdown.API;
 
 public static class ServiceProvider
 {
-    public static IServiceCollection AddHackMD(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddHackMarkdownApi(this IServiceCollection services, IConfiguration configuration)
     {
-        services.Configure<HackMDOptions>(configuration.GetSection(HackMDOptions.HackMD));
-        services.AddHttpClient<IHackMDClient, HackMDClient>((serviceProvider, config) =>
+        services.Configure<HackMarkdownOptions>(configuration.GetSection(HackMarkdownOptions.HackMarkdown));
+        services.AddHttpClient<IHackMarkdownClient, HackMarkdownClient>((serviceProvider, config) =>
         {
-            var option = serviceProvider.GetRequiredService<IOptions<HackMDOptions>>().Value;
+            var option = serviceProvider.GetRequiredService<IOptions<HackMarkdownOptions>>().Value;
             config.BaseAddress = option.BaseUrl;
             config.DefaultRequestHeaders.Add("Authorization", $"Bearer {option.Token}");
         });

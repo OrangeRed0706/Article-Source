@@ -1,8 +1,8 @@
-﻿namespace HackMD.API.Options;
+namespace HackMarkdown.API.Options;
 
-internal class HackMDOptions
+internal class HackMarkdownOptions
 {
-    public const string HackMD = "HackMD";
-    public Uri BaseUrl { get; set; }
-    public string Token { get; set; }
+    public const string HackMarkdown = "HackMarkdown";
+    public Uri? BaseUrl { get; set; }
+    public string? Token { get; set; }
 }

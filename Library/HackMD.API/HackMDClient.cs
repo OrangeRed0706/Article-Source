@@ -1,16 +1,17 @@
 using System.Net;
 using System.Text;
 using System.Text.Json;
-using HackMD.API.Model;
+using HackMD.API.Model.Request;
+using HackMD.API.Model.Response;
 
-namespace HackMD.API;
+namespace HackMarkdown.API;
 
 // ReSharper disable once InconsistentNaming
-internal class HackMDClient : IHackMDClient
+internal class HackMarkdownClient : IHackMarkdownClient
 {
     private readonly HttpClient _httpClient;
 
-    public HackMDClient(HttpClient httpClient)
+    public HackMarkdownClient(HttpClient httpClient)
     {
         _httpClient = httpClient;
     }

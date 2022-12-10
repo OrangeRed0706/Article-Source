@@ -1,8 +1,9 @@
-using HackMD.API.Model;
+using HackMarkdown.API.Model.Request;
+using HackMarkdown.API.Model.Response;
 
-namespace HackMD.API;
+namespace HackMarkdown.API;
 
-public interface IHackMDClient
+public interface IHackMarkdownClient
 {
     Task<IEnumerable<NotesResponse>?> GetNotes();
     Task<NoteResponse?> GetNote(string noteId);
