@@ -1,5 +1,5 @@
-using HackMarkdown.API.Model.Request;
-using HackMarkdown.API.Model.Response;
+using HackMD.API.Model.Request;
+using HackMD.API.Model.Response;
 
 namespace HackMarkdown.API;
 
