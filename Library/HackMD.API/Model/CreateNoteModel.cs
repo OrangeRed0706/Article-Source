@@ -1,7 +1,7 @@
-using System.Text.Json.Serialization;
 using HackMD.API.Enums;
 
 namespace HackMD.API.Model;
+
 public class CreateNoteModel
 {
     public string? Title { get; set; }

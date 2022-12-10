@@ -18,6 +18,7 @@ public class NotesResponse
     public string? PublishLink { get; set; }
     [JsonPropertyName("shortId")]
     public string? ShortId { get; set; }
+    [JsonPropertyName("lastChangedAt")]
     public long LastChangedAt { get; set; }
     [JsonPropertyName("lastChangeUser")]
     public User? LastChangeUser { get; set; }

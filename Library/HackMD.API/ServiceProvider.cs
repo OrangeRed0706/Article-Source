@@ -2,9 +2,9 @@ using HackMD.API.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using System.Net.Http;
 
 namespace HackMD.API;
+
 public static class ServiceProvider
 {
     public static IServiceCollection AddHackMD(this IServiceCollection services, IConfiguration configuration)

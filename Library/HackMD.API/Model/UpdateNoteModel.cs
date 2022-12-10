@@ -1,6 +1,7 @@
 using HackMD.API.Enums;
 
 namespace HackMD.API.Model;
+
 public class UpdateNoteModel
 {
     public string? Content { get; set; }
