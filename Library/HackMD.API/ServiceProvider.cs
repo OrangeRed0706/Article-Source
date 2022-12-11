@@ -1,9 +1,9 @@
-using HackMarkdown.API.Options;
+using HackMD.API.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 
-namespace HackMarkdown.API;
+namespace HackMD.API;
 
 public static class ServiceProvider
 {
